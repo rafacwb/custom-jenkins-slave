@@ -4,7 +4,7 @@ labels:
   template: custom-jenkins-slave
 metadata:
   labels:
-    app: app
+    app: jenkins-slave
     template: custom-jenkins-slave
   name: custom-jenkins-slave
 objects:

@@ -7,11 +7,9 @@ ENV MAVEN_VERSION=3.3.9
 USER root
 
 # Install Skopeo
-RUN yum repolist > /dev/null && \
-    yum clean all && \
+RUN yum curl -L -o /etc/yum.repos.d/devel:kubic:libcontainers:stable.repo https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/CentOS_7/devel:kubic:libcontainers:stable.repo && \
     INSTALL_PKGS="skopeo" && \
-    yum install -y --enablerepo=rhel-7-server-extras-rpms --setopt=tsflags=nodocs $INSTALL_PKGS && \
-    rpm -V $INSTALL_PKGS && \
+    yum -y install $INSTALL_PKGS && \
     yum clean all
 
 RUN chown -R 1001:0 $HOME && \
