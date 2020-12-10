@@ -1,4 +1,4 @@
-FROM registry.redhat.io/openshift3/jenkins-agent-maven-35-rhel7:v3.11
+FROM xpto:1.0
 
 MAINTAINER Renato <rfelix@redhat.com>
 
