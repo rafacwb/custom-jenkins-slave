@@ -1,5 +1,5 @@
 SOURCE_IMAGE=registry.redhat.io/openshift3/jenkins-agent-maven-35-rhel7:v3.11
-APPLICATION=example-jenkins-slave-maven
+APPLICATION=manha-jenkins-slave-maven
 SOURCE_REPOSITORY_URL=https://github.com/jovemfelix/custom-jenkins-slave.git
 SOURCE_REPOSITORY_REF=master
 CONTEXT_DIR=maven/build
