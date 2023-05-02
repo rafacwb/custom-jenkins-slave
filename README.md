@@ -5,7 +5,7 @@ oc project cicd-tools
 
 oc process -f build.yaml --param-file=maven/build.params | oc apply -f - 
 
-oc start-build example-jenkins-slave-maven-build -F -w
+oc start-build supp-jenkins-slave-maven-build -F -w
 
 oc apply -f slave-configmap.yaml
 ```
