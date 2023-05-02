@@ -18,7 +18,7 @@ data:
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
           <name>jnlp</name>
-          <image>docker-registry.default.svc:5000/cicd-tools/manha-jenkins-slave-maven:latest</image>
+          <image>docker-registry.default.svc:5000/supp-hml/jenkins-slave-maven:latest</image>
           <privileged>false</privileged>
           <alwaysPullImage>true</alwaysPullImage>
           <workingDir>/tmp</workingDir>
